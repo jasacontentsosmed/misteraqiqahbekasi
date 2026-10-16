@@ -1,0 +1,6 @@
+{
+  "name": "MR Aqiqah Catering - Layanan Aqiqah Halal, Berkah & Praktis",
+  "description": "Layanan catering aqiqah premium bersertifikat halal MUI, olahan lezat anti-prengus, kemasan bento higienis, sertifikat pigura kayu eksklusif dan gratis tester ke rumah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
