@@ -77,7 +77,7 @@ export const InteractiveCalculator: React.FC<InteractiveCalculatorProps> = ({
         ? 'Jantan Syar’i Standar (Pilihan Utama)'
         : 'Jantan Kelas Super Jumbo'
     } (${animalCount} Ekor)
-• Format Layanan: ${packageType === 'bento' ? `Paket Nasi Bento Box (${boxQuantity} Box)` : 'Daging Olahan Matang Saja'}
+• Format Layanan: ${packageType === 'bento' ? `Paket Nasi Kotak Premium (${boxQuantity} Box)` : 'Daging Olahan Matang Saja'}
 ${packageType === 'bento' ? `• Jenis Nasi: ${riceType === 'putih' ? 'Nasi Putih Pulen' : riceType === 'kebuli' ? 'Nasi Kebuli Basmati Rempah' : 'Nasi Mandhi Khas Arab'}` : ''}
 • Olahan Sate: ${sateChoice}
 • Olahan Kuah: ${kuahChoice}
@@ -228,7 +228,7 @@ Halo Admin MR Aqiqah, saya ingin konfirmasi simulasi pesanan di atas untuk aqiqa
                       : 'border-[#eae8e3] hover:border-[#bec9c0]'
                   }`}
                 >
-                  <span className="font-bold text-sm text-[#00482f] block">Paket Bento Box Thinwall</span>
+                  <span className="font-bold text-sm text-[#00482f] block">Paket Nasi Kotak Premium</span>
                   <span className="text-xs text-[#3f4943] mt-0.5 block">Siap langsung dibagikan ke kerabat & panti</span>
                 </button>
 
@@ -252,7 +252,7 @@ Halo Admin MR Aqiqah, saya ingin konfirmasi simulasi pesanan di atas untuk aqiqa
                   {/* Quantity Slider */}
                   <div>
                     <div className="flex items-center justify-between text-xs font-semibold mb-1.5">
-                      <span className="text-[#3f4943]">Jumlah Bento Box:</span>
+                      <span className="text-[#3f4943]">Jumlah Nasi Kotak:</span>
                       <span className="text-base font-extrabold text-[#00482f] tabular-nums">
                         {boxQuantity} Box
                       </span>
@@ -432,7 +432,7 @@ Halo Admin MR Aqiqah, saya ingin konfirmasi simulasi pesanan di atas untuk aqiqa
                 {packageType === 'bento' && (
                   <div className="flex justify-between">
                     <span className="text-[#3f4943]">
-                      {boxQuantity} Bento Box ({riceType}):
+                      {boxQuantity} Box Nasi Kotak ({riceType}):
                     </span>
                     <span className="font-bold text-[#1b1c19] tabular-nums">
                       {formatRupiah(totalBoxCost)}

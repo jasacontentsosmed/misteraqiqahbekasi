@@ -142,13 +142,13 @@ export const PackageSection: React.FC<PackageSectionProps> = ({
                   </h3>
 
                   <div className="text-xs text-[#3f4943] mb-4">
-                    Estimasi porsi: <strong className="text-[#1b1c19]">{pkg.portionRange}</strong>
+                    <strong className="text-[#1b1c19]">{pkg.portionRange}</strong>
                   </div>
 
                   {/* Pricing Display */}
                   <div className="pt-3 pb-4 mb-4 border-y border-[#f0eee9]">
                     <div className="text-xs text-[#6f7a72] mb-1">
-                      {servingMode === 'bento' ? 'Harga Paket Komplit Bento:' : 'Harga Olahan Siap Saji:'}
+                      {servingMode === 'bento' ? 'Harga Paket Komplit:' : 'Harga Olahan Siap Saji:'}
                     </div>
                     <div className="flex items-baseline gap-1.5">
                       <span className="text-2xl sm:text-3xl font-extrabold text-[#006241] tabular-nums tracking-tight">
@@ -157,7 +157,7 @@ export const PackageSection: React.FC<PackageSectionProps> = ({
                     </div>
                     <div className="text-[11px] text-[#6f7a72] mt-1">
                       {servingMode === 'bento'
-                        ? `Sudah termasuk ${pkg.boxCount} box bento thinwall higienis`
+                        ? `Sudah termasuk ${pkg.boxCount} box kemasan premium`
                         : `Olahan ${pkg.skewersCount} tusuk sate + ${pkg.soupPortions} porsi kuah`}
                     </div>
                   </div>

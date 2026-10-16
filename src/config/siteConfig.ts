@@ -13,10 +13,13 @@ export const SITE_CONFIG = {
   },
 
   contact: {
-    // Nomor WhatsApp utama untuk menerima pesanan (format internasional tanpa tanda +, contoh: 6281234567890)
-    whatsappNumber: '6281234567890',
+    // Nomor WhatsApp resmi MR Aqiqah Catering (+62 813-1833-8324)
+    whatsappNumber: '6281318338324',
     // Tampilan nomor yang ramah dibaca pengguna
-    whatsappDisplay: '+62 812-3456-7890',
+    whatsappDisplay: '+62 813-1833-8324',
+    // Akun Instagram resmi
+    instagram: '@misteraqiqah',
+    instagramUrl: 'https://instagram.com/misteraqiqah',
     // Email layanan
     email: 'salam@mraqiqah.com',
     // Jam operasional customer care

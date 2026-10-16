@@ -46,11 +46,15 @@ Seluruh tombol pesanan, konsultasi, dan formulir tester di website terhubung ke 
 ```typescript
 export const SITE_CONFIG = {
   contact: {
-    // Ganti dengan nomor WhatsApp aktif catering Anda (format internasional tanpa tanda +, contoh: 6281299998888)
-    whatsappNumber: '6281234567890',
+    // Nomor WhatsApp resmi MR Aqiqah Catering
+    whatsappNumber: '6281318338324',
     
     // Tampilan teks nomor yang terbaca di footer
-    whatsappDisplay: '+62 812-3456-7890',
+    whatsappDisplay: '+62 813-1833-8324',
+    
+    // Akun Instagram resmi
+    instagram: '@misteraqiqah',
+    instagramUrl: 'https://instagram.com/misteraqiqah',
     
     // Email resmi
     email: 'salam@mraqiqah.com',

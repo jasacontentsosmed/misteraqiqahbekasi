@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, MapPin, Phone, Clock, Mail, Heart } from 'lucide-react';
+import { ShieldCheck, MapPin, Phone, Clock, Mail, Heart, Instagram } from 'lucide-react';
 import { LogoMRAqiqah } from './LogoMRAqiqah';
 import { Badge18Tahun } from './Badge18Tahun';
 import { SITE_CONFIG } from '../config/siteConfig';
@@ -82,6 +82,15 @@ export const Footer: React.FC = () => {
                 <Mail className="w-3.5 h-3.5 text-[#8bdbb1] shrink-0" />
                 <span>Email: {SITE_CONFIG.contact.email}</span>
               </div>
+              <a
+                href={SITE_CONFIG.contact.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#cba258] transition-colors"
+              >
+                <Instagram className="w-3.5 h-3.5 text-[#8bdbb1] shrink-0" />
+                <span>Instagram: {SITE_CONFIG.contact.instagram}</span>
+              </a>
             </div>
           </div>
         </div>

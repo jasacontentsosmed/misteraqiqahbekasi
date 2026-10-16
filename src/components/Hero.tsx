@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({
 
             {/* Subhead Body */}
             <p className="text-base sm:text-lg text-[#3f4943] leading-relaxed mb-6 max-w-2xl">
-              Layanan catering aqiqah premium berstandar syariah. Daging empuk gurih bersertifikasi Halal MUI, dikemas dalam Bento Box Thinwall higienis dengan dokumentasi video penyembelihan resmi dan souvenir pigura kayu eksklusif.
+              Layanan catering aqiqah premium berstandar syariah. Daging empuk gurih, dikemas dalam kemasan Box Eksklusif Premium dan setiap makanan dikemas dalam Box Thinwall sehingga lebih higienis. Dilengkapi dengan dokumentasi video penyembelihan, sertifikat aqiqah dan boneka domba.
             </p>
 
             {/* Value checklist */}
