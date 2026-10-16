@@ -2,6 +2,7 @@ import React from 'react';
 import { ShoppingBag, MessageCircle, Menu, X, ShieldCheck } from 'lucide-react';
 import { LogoMRAqiqah } from './LogoMRAqiqah';
 import { Badge18Tahun } from './Badge18Tahun';
+import { getWhatsAppUrl } from '../config/siteConfig';
 
 interface NavbarProps {
   onOpenTesterModal: () => void;
@@ -26,10 +27,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   ];
 
   const handleWhatsAppContact = () => {
-    const text = encodeURIComponent(
-      'Halo Admin MR Aqiqah Catering, saya ingin konsultasi mengenai paket aqiqah untuk putra/putri kami.'
-    );
-    window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+    const text = 'Halo Admin MR Aqiqah Catering, saya ingin konsultasi mengenai paket aqiqah untuk putra/putri kami.';
+    window.open(getWhatsAppUrl(text), '_blank');
   };
 
   return (

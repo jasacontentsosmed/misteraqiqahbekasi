@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, ShoppingBag, MessageCircle, Check, ArrowRight, ShieldCheck } from 'lucide-react';
 import { AqiqahPackage } from '../data/aqiqahData';
+import { getWhatsAppUrl } from '../config/siteConfig';
 
 interface OrderDrawerProps {
   isOpen: boolean;
@@ -37,8 +38,7 @@ export const OrderDrawer: React.FC<OrderDrawerProps> = ({
 
   const handleCheckoutWhatsApp = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = encodeURIComponent(
-      `*FORM PEMESANAN MR AQIQAH CATERING*
+    const text = `*FORM PEMESANAN MR AQIQAH CATERING*
 ----------------------------------------
 • Paket Pilihan: ${selectedPackage.name}
 • Format: ${servingMode === 'bento' ? `Paket Bento Box (${selectedPackage.boxCount} Box)` : 'Daging Olahan Matang Saja'}
@@ -52,9 +52,8 @@ export const OrderDrawer: React.FC<OrderDrawerProps> = ({
 ----------------------------------------
 *TOTAL HARGA: ${formatRupiah(currentPrice)}*
 
-Halo Admin MR Aqiqah, saya ingin booking paket aqiqah di atas. Mohon arahan pembayaran DP dan konfirmasi slotnya. Terima kasih.`
-    );
-    window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+Halo Admin MR Aqiqah, saya ingin booking paket aqiqah di atas. Mohon arahan pembayaran DP dan konfirmasi slotnya. Terima kasih.`;
+    window.open(getWhatsAppUrl(text), '_blank');
   };
 
   return (

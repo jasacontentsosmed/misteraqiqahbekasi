@@ -2,6 +2,7 @@ import React from 'react';
 import { ShieldCheck, MapPin, Phone, Clock, Mail, Heart } from 'lucide-react';
 import { LogoMRAqiqah } from './LogoMRAqiqah';
 import { Badge18Tahun } from './Badge18Tahun';
+import { SITE_CONFIG } from '../config/siteConfig';
 
 export const Footer: React.FC = () => {
   return (
@@ -71,15 +72,15 @@ export const Footer: React.FC = () => {
             <div className="text-xs text-white/80 space-y-2">
               <div className="flex items-center gap-2">
                 <Clock className="w-3.5 h-3.5 text-[#8bdbb1] shrink-0" />
-                <span>Customer Care: Setiap Hari 07.00 - 22.00 WIB</span>
+                <span>Customer Care: {SITE_CONFIG.contact.operatingHours}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#8bdbb1] shrink-0" />
-                <span>WhatsApp: +62 812-3456-7890</span>
+                <span>WhatsApp: {SITE_CONFIG.contact.whatsappDisplay}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#8bdbb1] shrink-0" />
-                <span>Email: salam@mraqiqah.com</span>
+                <span>Email: {SITE_CONFIG.contact.email}</span>
               </div>
             </div>
           </div>

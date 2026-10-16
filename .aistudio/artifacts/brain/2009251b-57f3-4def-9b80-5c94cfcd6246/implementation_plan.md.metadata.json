@@ -1,0 +1,6 @@
+{
+  "summary": "Rencana perbaikan error deployment Vercel (npm ERESOLVE): menghapus dependensi esbuild yang konflik dari devDependencies di package.json, menambahkan file .npmrc dengan legacy-peer-deps=true, memperbarui konfigurasi vercel.json, dan melakukan commit ke branch main.",
+  "updatedAt": "2026-10-16T06:19:02.080877850Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

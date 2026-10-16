@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Utensils, MessageCircle, CheckCircle, ShieldCheck, Clock } from 'lucide-react';
+import { getWhatsAppUrl } from '../config/siteConfig';
 
 interface TesterModalProps {
   isOpen: boolean;
@@ -23,8 +24,7 @@ export const TesterModal: React.FC<TesterModalProps> = ({ isOpen, onClose }) => 
   };
 
   const handleSendToWhatsApp = () => {
-    const text = encodeURIComponent(
-      `*PERMINTAAN TESTER FOOD GRATIS MR AQIQAH*
+    const text = `*PERMINTAAN TESTER FOOD GRATIS MR AQIQAH*
 ----------------------------------------
 • Nama Orang Tua: ${parentName}
 • No. WhatsApp: ${phone}
@@ -32,9 +32,8 @@ export const TesterModal: React.FC<TesterModalProps> = ({ isOpen, onClose }) => 
 • Status Buah Hati: ${babyStatus}
 • Pilihan Menu Tester: ${testerVariant}
 ----------------------------------------
-Halo Admin MR Aqiqah, saya ingin mencicipi tester makanan gratis seperti data di atas. Mohon dijadwalkan pengirimannya. Terima kasih.`
-    );
-    window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+Halo Admin MR Aqiqah, saya ingin mencicipi tester makanan gratis seperti data di atas. Mohon dijadwalkan pengirimannya. Terima kasih.`;
+    window.open(getWhatsAppUrl(text), '_blank');
     onClose();
     setSubmitted(false);
   };

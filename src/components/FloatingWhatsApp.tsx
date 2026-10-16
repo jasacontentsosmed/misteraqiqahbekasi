@@ -1,12 +1,11 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { getWhatsAppUrl } from '../config/siteConfig';
 
 export const FloatingWhatsApp: React.FC = () => {
   const handleChat = () => {
-    const text = encodeURIComponent(
-      'Halo Admin MR Aqiqah Catering, saya ingin bertanya dan konsultasi paket aqiqah untuk anak kami.'
-    );
-    window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+    const text = 'Halo Admin MR Aqiqah Catering, saya ingin bertanya dan konsultasi paket aqiqah untuk anak kami.';
+    window.open(getWhatsAppUrl(text), '_blank');
   };
 
   return (

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calculator, MessageCircle, Check, Copy, Share2, Sparkles, AlertCircle } from 'lucide-react';
+import { getWhatsAppUrl } from '../config/siteConfig';
 
 interface InteractiveCalculatorProps {
   initialGender?: 'laki' | 'perempuan';
@@ -92,8 +93,7 @@ Halo Admin MR Aqiqah, saya ingin konfirmasi simulasi pesanan di atas untuk aqiqa
   };
 
   const handleWhatsAppCheckout = () => {
-    const text = encodeURIComponent(buildSummaryText());
-    window.open(`https://wa.me/6281234567890?text=${text}`, '_blank');
+    window.open(getWhatsAppUrl(buildSummaryText()), '_blank');
   };
 
   const handleCopySummary = () => {
